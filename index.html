@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Opalo Estudio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- cabezal -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-circle"><img src="img/logo1.png" alt="100" width="100"></div>
+                </div>
+                <div>
+                    <h1>ESTUDIOS ÓPALO</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--Modal de inicio -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">EL VIAJE DEL CAFÉ</h1>
+            <p class="hero-subtitle">"Cada historia brilla con su propio color"</p>
+            <button class="btn-primary" onclick="openModal('inicio')">!DALE CLICK!</button>
+        </div>
+    </section>
+     <!-- Modal de bienvenidos -->
+    <div id="modal-inicio" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('inicio')">&times;</span>
+            <h2>¡BIENVENIDOS A NUESTRO PROYECTO INTERACTIVO DEL CAFÉ!</h2>
+            <div class="modal-columns">
+                <div>
+                    <p class="bienvenido-text">Celebramos la tradición cafetalera y su impacto en nuestra cultura. 
+                        Acompáñanos en este viaje por sus procesos y secretos, a través de maquetas 
+                        y actividades que te harán valorar cada sorbo.</p>
+                </div>
+                <div>
+                    <img src="img/gato.gif" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Seccion de Maquetas -->
+    <section class="curations">
+        <div class="container">
+            <h2 class="section-title">MAQUETAS</h2>
+            <div class="curations-grid">
+                <div class="curation-item" onclick="openModal('maqueta1')">
+                    <div class="curation-icon"><img src="img/arbol.png" alt="60px" width="60px"></div>
+                    <p>MAQUETA 1</p>
+                </div>
+                <div class="curation-item" onclick="openModal('maqueta2')">
+                    <div class="curation-icon"><img src="img/cafe.png" alt="60px" width="60px"></div>
+                    <p>MAQUETA 2</p>
+                </div>
+                <div class="curation-item" onclick="openModal('maqueta3')">
+                    <div class="curation-icon"><img src="img/molinillo.png" alt="60px" width="60px"></div>
+                    <p>MAQUETA 3</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal maqueta1 -->
+    <div id="modal-maqueta1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('maqueta1')">&times;</span>
+            <h2>RECOLECCIÓN DEL CAFÉ</h2>
+            <div class="modal-carousel" id="carousel-maqueta1">
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <img src="img/maquetas/maqueta1/recoleccion1.JPG" alt="Recolección 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/maquetas/maqueta1/recoleccion2.JPG" alt="Recolección 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/maquetas/maqueta1/recoleccion3.JPG" alt="Recolección 3">
+                    </div>
+                </div>
+                <button class="carousel-button prev" onclick="moveCarousel('maqueta1', -1)">‹</button>
+                <button class="carousel-button next" onclick="moveCarousel('maqueta1', 1)">›</button>
+            
+                <div class="carousel-indicators" id="indicators-maqueta1"></div>
+            </div>
+            <p class="modal-description">
+                La recolección del café es un proceso artesanal donde se seleccionan 
+                cuidadosamente los granos maduros. Los caficultores identifican las cerezas 
+                en su punto óptimo de maduración para garantizar la mejor calidad del café.
+            </p>
+        </div>
+    </div>
+
+    <!-- Modal maqueta2-->
+    <div id="modal-maqueta2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('maqueta2')">&times;</span>
+            <h2>TOSTADO DEL CAFÉ</h2>
+            <div class="modal-carousel" id="carousel-maqueta2">
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <img src="img/maquetas/maqueta2/tostado1.JPG" alt="Tostado 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/maquetas/maqueta2/tostado2.JPG" alt="Tostado 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/maquetas/maqueta2/tostado3.JPG" alt="Tostado 3">
+                    </div>
+                </div>
+                <button class="carousel-button prev" onclick="moveCarousel('maqueta2', -1)">‹</button>
+                <button class="carousel-button next" onclick="moveCarousel('maqueta2', 1)">›</button>
+            
+                <div class="carousel-indicators" id="indicators-maqueta2"></div>
+            </div>
+            <p class="modal-description">
+                El tostado es donde el café desarrolla sus sabores característicos. 
+                A través del calor controlado, los granos verdes se transforman, 
+                liberando los aceites y aromas que definen el perfil de sabor único de cada café.
+            </p>
+        </div>
+    </div> 
+
+    <div id="modal-maqueta3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('maqueta3')">&times;</span>
+            <h2>MOLIDO DEL CAFÉ</h2>
+            <div class="modal-carousel" id="carousel-maqueta3">
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <img src="img/maquetas/maqueta3/molido1.JPG" alt="Molido 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/maquetas/maqueta3/molido2.JPG" alt="Molido 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/maquetas/maqueta3/molido3.JPG" alt="Molido 3">
+                    </div>
+                </div>
+                <button class="carousel-button prev" onclick="moveCarousel('maqueta3', -1)">‹</button>
+                <button class="carousel-button next" onclick="moveCarousel('maqueta3', 1)">›</button>
+            
+                <div class="carousel-indicators" id="indicators-maqueta3"></div>
+            </div>
+            <p class="modal-description">
+                El molido determina la extracción perfecta del café. Cada método de preparación 
+                requiere una granulometría específica, desde fino para espresso hasta grueso 
+                para prensa francesa, liberando los sabores en su máximo potencial.
+            </p>
+        </div>
+    </div> 
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-circle-footer"><img src="img/logo1.png" alt="90" width="90"></div>
+                </div>
+                
+                <div class="footer-columns">
+                    <div class="footer-column">
+                        <h4>Sobre Nosotros</h4>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Redes Sociales</h4>
+                        <div class="social-icons">
+                            <a href="#"><img src="img/inst.png" alt="50" width="50"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-links">
+                    <a href="#">Web Accessibility</a>
+                    <a href="#">Privacy Statement</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Contact Us</a>
+                </div>
+                <p class="copyright">© 2025 Estudios Ópalo Animation Company. All rights reserved.</p>
+            </div>
+        </div>
+        
+        <button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Back on top ↑</button>
+    </footer>
+</body>
+
+    <script>
+        function openModal(type) {
+            document.getElementById('modal-' + type).style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(type) {
+            document.getElementById('modal-' + type).style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Cerrar modal al hacer clic fuera del contenido
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        }
+        const carousels = {
+        'maqueta1': { currentSlide: 0, totalSlides: 3 },
+        'maqueta2': { currentSlide: 0, totalSlides: 3 },
+        'maqueta3': { currentSlide: 0, totalSlides: 3 }
+        };
+
+        // Inicializar indicadores al cargar la página
+        document.addEventListener('DOMContentLoaded', function() {
+            Object.keys(carousels).forEach(key => {
+                initCarousel(key);
+            });
+        });
+
+        function initCarousel(maquetaId) {
+            const indicatorsContainer = document.getElementById(`indicators-${maquetaId}`);
+            if (!indicatorsContainer) return;
+            
+            indicatorsContainer.innerHTML = '';
+            const totalSlides = carousels[maquetaId].totalSlides;
+            
+            for (let i = 0; i < totalSlides; i++) {
+                const indicator = document.createElement('div');
+                indicator.className = 'indicator';
+                if (i === 0) indicator.classList.add('active');
+                indicator.onclick = () => goToSlide(maquetaId, i);
+                indicatorsContainer.appendChild(indicator);
+            }
+        }
+
+        function moveCarousel(maquetaId, direction) {
+            const carousel = carousels[maquetaId];
+            carousel.currentSlide += direction;
+            
+            if (carousel.currentSlide < 0) {
+                carousel.currentSlide = carousel.totalSlides - 1;
+            } else if (carousel.currentSlide >= carousel.totalSlides) {
+                carousel.currentSlide = 0;
+            }
+            
+            updateCarousel(maquetaId);
+        }
+
+        function goToSlide(maquetaId, index) {
+            carousels[maquetaId].currentSlide = index;
+            updateCarousel(maquetaId);
+        }
+
+        function updateCarousel(maquetaId) {
+            const carousel = carousels[maquetaId];
+            const carouselElement = document.querySelector(`#carousel-${maquetaId} .carousel-inner`);
+            
+            if (carouselElement) {
+                carouselElement.style.transform = `translateX(-${carousel.currentSlide * 100}%)`;
+            }
+            
+            // Actualizar indicadores
+            const indicators = document.querySelectorAll(`#indicators-${maquetaId} .indicator`);
+            indicators.forEach((indicator, index) => {
+                indicator.classList.toggle('active', index === carousel.currentSlide);
+            });
+        }
+
+        function openModal(type) {
+            document.getElementById('modal-' + type).style.display = 'block';
+            document.body.style.overflow = 'hidden';
+            
+            // Reiniciar carrusel al abrir modal
+            if (carousels[type]) {
+                carousels[type].currentSlide = 0;
+                updateCarousel(type);
+            }
+        }
+
+        function closeModal(type) {
+            document.getElementById('modal-' + type).style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Cerrar modal al hacer clic fuera del contenido
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        }
+    </script>
+</html>
