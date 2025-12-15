@@ -12,20 +12,18 @@
 <body>
     <!-- cabezal -->
     <header class="header">
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <div class="logo-circle"><img src="img/logo1.png" alt="100" width="100"></div>
-                </div>
-                <div>
-                    <h1>ESTUDIOS ÓPALO</h1>
-                </div>
+        <div class="header-content">
+            <div class="logo logo-left">
+                <img src="img/lgygif/onegro.png" alt="Logo Opalo" width="50">
+            </div>
+            <div class="logo logo-right">
+                <img src="img/lgygif/opnegro.png" alt="Logo Opalo" width="100">
             </div>
         </div>
     </header>
 
     <!--Modal de inicio -->
-    <section class="hero">
+    <section class="hero parallax">
         <div class="hero-content">
             <h1 class="hero-title">EL VIAJE DEL CAFÉ</h1>
             <p class="hero-subtitle">"Cada historia brilla con su propio color"</p>
@@ -44,29 +42,33 @@
                         y actividades que te harán valorar cada sorbo.</p>
                 </div>
                 <div>
-                    <img src="img/gato.gif" alt="">
+                    <img src="img/lgygif/gif.GIF" alt="">
                 </div>
             </div>
         </div>
     </div>
 
 
+    <!-- Separador -->
+    <div class="section-divider">
+        <h3 class="divider-title">MAQUETAS</h3>
+    </div>
+
     <!-- Seccion de Maquetas -->
-    <section class="curations">
+    <section class="curations parallax">
         <div class="container">
-            <h2 class="section-title">MAQUETAS</h2>
             <div class="curations-grid">
                 <div class="curation-item" onclick="openModal('maqueta1')">
                     <div class="curation-icon"><img src="img/arbol.png" alt="60px" width="60px"></div>
-                    <p>MAQUETA 1</p>
+                    <h2 class="subtitulos">MAQUETA 1</h2>
                 </div>
                 <div class="curation-item" onclick="openModal('maqueta2')">
                     <div class="curation-icon"><img src="img/cafe.png" alt="60px" width="60px"></div>
-                    <p>MAQUETA 2</p>
+                    <h2 class="subtitulos">MAQUETA 2</h2>
                 </div>
                 <div class="curation-item" onclick="openModal('maqueta3')">
                     <div class="curation-icon"><img src="img/molinillo.png" alt="60px" width="60px"></div>
-                    <p>MAQUETA 3</p>
+                    <h2 class="subtitulos">MAQUETA 3</h2>
                 </div>
             </div>
         </div>
@@ -161,40 +163,85 @@
         </div>
     </div> 
 
+    <!-- Separador -->
+    <div class="section-divider">
+        <h3 class="divider-title">SOBRE NOSOTROS</h3>
+    </div>
+
+    <!-- Sección Sobre Nosotros / Equipo -->
+    <section class="team-section parallax">
+        <div class="container">
+            <p class="team-intro">Conoce al equipo detrás de Ópalo Estudio</p>
+            
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-circle">
+                        <img src="img/team/miembro1.jpg" alt="Miembro 1" onerror="this.src='img/cafe.png'">
+                    </div>
+                    <h3 class="team-name">Nombre Apellido</h3>
+                    <p class="team-role">Puesto</p>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-circle">
+                        <img src="img/team/miembro2.jpg" alt="Miembro 2" onerror="this.src='img/cafe.png'">
+                    </div>
+                    <h3 class="team-name">Nombre Apellido</h3>
+                    <p class="team-role">Puesto</p>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-circle">
+                        <img src="img/team/miembro3.jpg" alt="Miembro 3" onerror="this.src='img/cafe.png'">
+                    </div>
+                    <h3 class="team-name">Nombre Apellido</h3>
+                    <p class="team-role">Puesto</p>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-circle">
+                        <img src="img/team/miembro4.jpg" alt="Miembro 4" onerror="this.src='img/cafe.png'">
+                    </div>
+                    <h3 class="team-name">Nombre Apellido</h3>
+                    <p class="team-role">Puesto</p>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-circle">
+                        <img src="img/team/miembro5.jpg" alt="Miembro 5" onerror="this.src='img/cafe.png'">
+                    </div>
+                    <h3 class="team-name">Nombre Apellido</h3>
+                    <p class="team-role">Puesto</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Separador -->
+    <div class="section-divider">
+        <h3 class="divider-title">CONTACTO</h3>
+    </div>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <div class="logo-circle-footer"><img src="img/logo1.png" alt="90" width="90"></div>
-                </div>
-                
-                <div class="footer-columns">
-                    <div class="footer-column">
-                        <h4>Sobre Nosotros</h4>
-                    </div>
-
-                    <div class="footer-column">
-                        <h4>Redes Sociales</h4>
-                        <div class="social-icons">
-                            <a href="#"><img src="img/inst.png" alt="50" width="50"></a>
-                        </div>
+            <div class="footer-content-simple">
+                <div class="footer-social">
+                    <h4>Síguenos en Redes Sociales</h4>
+                    <div class="social-icons">
+                        <a href="#" target="_blank" title="Instagram">
+                            <img src="img/cafe.png" alt="Instagram" width="40">
+                        </a>
                     </div>
                 </div>
             </div>
             
-            <div class="footer-bottom">
-                <div class="footer-links">
-                    <a href="#">Web Accessibility</a>
-                    <a href="#">Privacy Statement</a>
-                    <a href="#">Terms of Use</a>
-                    <a href="#">Contact Us</a>
-                </div>
-                <p class="copyright">© 2025 Estudios Ópalo Animation Company. All rights reserved.</p>
+            <div class="footer-bottom-simple">
+                <p class="copyright">© 2025 Estudios Ópalo Animation Company. Todos los derechos reservados.</p>
             </div>
         </div>
         
-        <button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Back on top ↑</button>
+        <button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Volver arriba ↑</button>
     </footer>
 </body>
 
